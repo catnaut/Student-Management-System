@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from "daisyui";
+
+// eslint-disable-next-line no-undef
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
+// eslint-disable-next-line no-undef
 module.exports = {
   content: [
     "./index.html",
@@ -8,6 +12,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [daisyui],
+  plugins: [daisyui, addDynamicIconSelectors()],
 }
 
