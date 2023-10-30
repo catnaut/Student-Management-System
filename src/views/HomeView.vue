@@ -9,7 +9,7 @@ import DropDownAvatar from '@/components/Home/DropDownAvatar.vue'
       <input id="root-drawer" type="checkbox" class="drawer-toggle" />
 
       <!-- page context -->
-      <div class="drawer-content flex flex-col h-screen">
+      <div class="drawer-content flex flex-col h-screen overflow-hidden">
         <!-- nav-bar -->
         <div class="navbar bg-base-100 w-full">
           <!-- menu-toggle -->
@@ -25,8 +25,8 @@ import DropDownAvatar from '@/components/Home/DropDownAvatar.vue'
           </div>
         </div>
         <!-- main -->
-        <main class="bg-blue-100 h-full">
-          <RouterView class="" />
+        <main class="bg-blue-100 h-full overflow-hidden">
+          <RouterView  />
         </main>
       </div>
 
