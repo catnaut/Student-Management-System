@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 
 <template>
-  <h1 class="text-3xl font-bold underline text-red-50">
-    Hello world!
-  </h1>
+  <RouterView />
+  <!-- 临时写法： 先引入 router 写完 view 再回头更改 -->
 </template>
